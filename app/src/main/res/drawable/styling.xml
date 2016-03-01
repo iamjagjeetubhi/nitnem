@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!-- set the shadow color here -->
+            <gradient
+
+                android:startColor="#4d8eb9"
+                android:endColor="#a15b80"
+                android:angle="45" />
+
+            <!-- setting the thickness of shadow (positive value will give shadow on that side) -->
+
+            <padding
+                android:bottom="3dp"
+                android:left="3dp"
+                android:right="3dp"
+                android:top="3dp" />
+
+
+        </shape>
+    </item>
+
+    <!-- Background -->
+
+
+</layer-list>
