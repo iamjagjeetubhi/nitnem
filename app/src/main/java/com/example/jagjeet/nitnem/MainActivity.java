@@ -1,12 +1,17 @@
 package com.example.jagjeet.nitnem;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         Button b1=(Button)findViewById(R.id.button);
         Button b2=(Button)findViewById(R.id.button2);
         Button b3=(Button)findViewById(R.id.button3);
@@ -23,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         Button b7=(Button)findViewById(R.id.button7);
         Button b8=(Button)findViewById(R.id.button8);
         Button b9=(Button)findViewById(R.id.button9);
+        Button b10=(Button)findViewById(R.id.button10);
+
+
+
+
+
+
         b1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -98,6 +112,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        b10.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                String url = "http://www.google.com";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+
+
+            }
+        });
+
 
     }
 
@@ -105,8 +131,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
+
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -117,9 +146,14 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            String url = "https://github.com/iamjagjeetubhi/nitnem";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 }
