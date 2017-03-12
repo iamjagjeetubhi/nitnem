@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jagjeet.nitnem">
+    package="com.wordpress.iamjagjeetubhi.nitnem">
 
     <application
         android:allowBackup="true"
@@ -9,28 +9,32 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".animsplash"
+            android:name="com.wordpress.iamjagjeetubhi.nitnem.SplashscreenActivity"
 
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
+
+            android:theme="@style/AppTheme.NoActionBar">
+
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+
+            android:name="com.wordpress.iamjagjeetubhi.nitnem.MainActivity"
             android:label="@string/app_name">
         </activity>
-        <activity android:name=".ThirdActivity"/>
-        <activity android:name=".FourthActivity"/>
-        <activity android:name=".FifthActivity"/>
-        <activity android:name=".SixthActivity"/>
-        <activity android:name=".SeventhActivity"/>
-        <activity android:name=".EighthActivity"/>
-        <activity android:name=".NinthActivity"/>
-        <activity android:name=".TenthActivity"/>
-        <activity android:name=".EleventhActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.ThirdActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.FourthActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.FifthActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.SixthActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.SeventhActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.EighthActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.NinthActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.TenthActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.EleventhActivity"/>
+        <activity android:name="com.wordpress.iamjagjeetubhi.nitnem.About"/>
     </application>
 
 

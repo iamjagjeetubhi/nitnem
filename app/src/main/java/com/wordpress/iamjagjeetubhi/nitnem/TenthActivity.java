@@ -1,20 +1,17 @@
-package com.example.jagjeet.nitnem;
+package com.wordpress.iamjagjeetubhi.nitnem;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 
-public class EleventhActivity extends Activity {
+public class TenthActivity extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_eleventh);
+		setContentView(R.layout.activity_tenth);
 		
 		  initTypeface();
     }
@@ -22,7 +19,7 @@ public class EleventhActivity extends Activity {
     private void initTypeface() {
     	
     	Typeface grunge = Typeface.createFromAsset(getAssets(), "fonts/GurbaniAkhar.ttf");
-    	TextView titleText=(TextView) findViewById(R.id.ardas);
+    	TextView titleText=(TextView) findViewById(R.id.sohila);
     	titleText.setTypeface(grunge);
 		
 

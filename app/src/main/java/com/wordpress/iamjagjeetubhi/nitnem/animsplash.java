@@ -1,10 +1,9 @@
-package com.example.jagjeet.nitnem;
+package com.wordpress.iamjagjeetubhi.nitnem;
 
 /**
  * Created by jagjeet on 7/3/16.
  */
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.view.Window;
@@ -29,7 +28,7 @@ public class animsplash extends Activity {
         /** Making this activity, full screen */
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.animsplash);
+        setContentView(R.layout.about);
         CountDown _tik;
         _tik=new CountDown(2500,2500,this,MainActivity.class);// It delay the screen for 2.5 second and after that switch to YourNextActivity
         _tik.start();

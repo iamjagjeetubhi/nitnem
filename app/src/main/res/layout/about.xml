@@ -9,8 +9,8 @@
     android:orientation="vertical" >
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256px"
+        android:layout_height="256px"
         android:id="@+id/logo"
         android:background="@drawable/background"/>
 
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Developer : Jagjeet Ubhi"
+        android:text="@string/textView2"
 
         android:gravity="center"
         android:textColor="#fbfbfb"

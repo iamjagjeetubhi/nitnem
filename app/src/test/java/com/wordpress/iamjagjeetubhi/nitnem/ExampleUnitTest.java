@@ -1,4 +1,4 @@
-package com.example.jagjeet.nitnem;
+package com.wordpress.iamjagjeetubhi.nitnem;
 
 import org.junit.Test;
 
